@@ -1,0 +1,12 @@
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+OPENAI_KEY = os.getenv("OPENAI_KEY")
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+STRIPE_API_KEY = os.getenv("STRIPE_API_KEY")
+STRIPE_WEBHOOK_SECRET = os.getenv("STRIPE_WEBHOOK_SECRET")
+
+FREE_LIMIT = 10
+ADMIN_ID = 5103604204 # твой telegram id

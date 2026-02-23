@@ -1,0 +1,14 @@
+CREATE TABLE users(
+ telegram_id BIGINT PRIMARY KEY,
+ messages_count INT DEFAULT 0,
+ subscribed BOOLEAN DEFAULT FALSE,
+ last_message TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE chat_history(
+ id SERIAL PRIMARY KEY,
+ user_id BIGINT,
+ role TEXT,
+ content TEXT,
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
